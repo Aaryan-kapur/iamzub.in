@@ -1,2 +1,2 @@
 # iamzub.in
-portffolio website
+portfolio website
