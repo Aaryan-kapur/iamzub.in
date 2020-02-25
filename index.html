@@ -1,53 +1,234 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" href="assets/male-technologist.png" type="image/x-icon">
-    <title>Zubin Choudhary - Web Developer</title>
-</head>
+<!-- saved from url=(0038)http://home.iiitd.edu.in/~aniket17133/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Zubin Choudhary</title>
+		<style type="text/css">
+			:root {
+				--link-color: #000000;
+				--bg-color: #fff;
+				--text-color: #000000;
+			}
+			[data-theme="dark"] {
+				--bg-color: #161625;
+				--link-color: #FF5733;
+				--text-color: #FFFFFF;
+			}
+			* {
+				color: var(--text-color);
+				font-family: monospace;
+				font-size: 14px;
+				/* max-width: 520px; */
+			}
+			body {
+				background-color: var(--bg-color);
+			}
+			a {
+				color: var(--link-color);
+				font-weight: bold;
+				text-decoration: none;
+			} 
+			h1 {
+				color: --var(--text-color);
+				font-weight: normal;
+			}
+			tab {
+				display: inline-block; 
+				margin-left: 5px; 
+			}
+			@media only screen and (min-width: 360px) {
+				tab {
+					margin-left: 20px;
+				}
+			}
+			@media only screen and (min-width: 600px) {
+				tab {
+					margin-left: 20vw;
+				}
+			}
+			@media only screen and (min-width: 768px) {
+				tab {
+					margin-left: 30vw;
+				}
+			}
 
-<body>
-    <div id="page-container">
-        <div id="content-wrap">
-            <div id="top"></div>
-            <div class="header">
-                <!-- <a href="#" class="logo">Zubin Choudhary </a> -->
-                <div class="header-right">
-                    <a href="#">Resume</a>
-                    <!-- <a href="#">About</a> -->
-                    <a href="mailto:name@email.com">Contact</a>
-                </div>
-            </div>
-            <h2 id="USP"> <img src="assets/waving-hand.png" alt="WaveHand Emoji" height="48px"> <b> Hello,</b> I am <a
-                    class="highlight">Zubin Choudhary</a></h2>
-                    <h2 id="recent">I'm a programmer/developer from India<img src="assets/flag-for-india.png" alt="Indian flag" width="40" height="40" >, interested in linux stuff, open source contributor, currently student at Bennett University</h2>            
-            <!-- <div class="recents">
+			.theme-switch-wrapper {
+				float: right;
+				display: flex;
+				align-items: center;
 
-                <div class="card">
-                    <a class="highlight" href="#"> Google Summer Of Code</a>
-                </div>
-                <div class="card">
-                    <a class="highlight" href="#"> Blockchain and FaceRec based public transport Wallet</a>
-                    </div>
-                <div class="card">
-                    <a class="highlight" href="#"> Licence Plate Recognition based Toll</a>
-                </div>
-            </div> -->
+				/* em {
+					margin-left: 10px;
+					font-size: 1rem;
+				} */
+			}
+			.theme-switch {
+				display: inline-block;
+				height: 23px;
+				position: relative;
+				width: 35px;
+			}
 
+			.theme-switch input {
+				display:none;
+			}
 
-            <!-- Ohh I see you're a developer as well, hit me up on email and lets collab -->
-        </div>
-        <div id="footer">
-            <a href="https://twitter.com/iamzub_in">Twitter</a>
-            <a href="https://github.com/iamzubin">Github</a>
-        </div>
-    </div>
+			.slider {
+				background-color: #ccc;
+				bottom: 0;
+				cursor: pointer;
+				left: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+				transition: .4s;
+			}
 
-</body>
+			.slider:before {
+				background-color: #fff;
+				bottom: 4px;
+				content: "";
+				height: 15px;
+				left: 4px;
+				position: absolute;
+				transition: .4s;
+				width: 15px;
+			}
 
-</html>
+			input:checked + .slider {
+				background-color: #444444;
+			}
+
+			.slider.round:before {
+				background-color: #444444;
+			}
+
+			input:checked + .slider.round:before {
+				background-color: #FFFFFF;
+			}
+
+			input:checked + .slider:before {
+				transform: translateX(11px);
+			}
+
+			.slider.round {
+				border-radius: 15px;
+			}
+
+			.slider.round:before {
+				border-radius: 50%;
+			}
+		</style>
+	<script data-dapp-detection="">
+(function() {
+  let alreadyInsertedMetaTag = false
+
+  function __insertDappDetected() {
+    if (!alreadyInsertedMetaTag) {
+      const meta = document.createElement('meta')
+      meta.name = 'dapp-detected'
+      document.head.appendChild(meta)
+      alreadyInsertedMetaTag = true
+    }
+  }
+
+  if (window.hasOwnProperty('web3')) {
+    // Note a closure can't be used for this var because some sites like
+    // www.wnyc.org do a second script execution via eval for some reason.
+    window.__disableDappDetectionInsertion = true
+    // Likely oldWeb3 is undefined and it has a property only because
+    // we defined it. Some sites like wnyc.org are evaling all scripts
+    // that exist again, so this is protection against multiple calls.
+    if (window.web3 === undefined) {
+      return
+    }
+    __insertDappDetected()
+  } else {
+    var oldWeb3 = window.web3
+    Object.defineProperty(window, 'web3', {
+      configurable: true,
+      set: function (val) {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        oldWeb3 = val
+      },
+      get: function () {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        return oldWeb3
+      }
+    })
+  }
+})()</script></head>
+	<body>
+		<div class="theme-switch-wrapper">
+		<label class="theme-switch" for="checkbox">
+			<input type="checkbox" id="checkbox">
+			<div class="slider round"></div>
+		</label>
+		</div>
+		<div>
+			<h1>ZUBIN(1)</h1>
+			<h2>NAME</h2>
+			<blockquote>
+			<p>Zubin Choudhary - A Human Being</p>
+			</blockquote>
+			<h2>SYNOPSIS</h2>
+			<blockquote>
+			<p>
+				<b>iamzubin</b> [<b><u>OPTION</u></b>]... [<b><u>FILE</u></b>]...
+			</p>
+			</blockquote>
+			<h2>DESCRIPTION</h2>
+
+			<blockquote>
+				<p>Student @ Bennett University - Greater Noida.</p>
+				<p>I am interested in Linux stuff. </p>
+			</blockquote>
+
+			<h2>ALSO KNOWN AS</h2>
+			<blockquote>
+				<p>iamzub[dot]in,iamzub_in</p>
+			</blockquote>
+
+			<h2>COPYRIGHT</h2>
+			<blockquote>
+				<p>This poor imitation of a man page is now licensed under the WTFPL license. Sourced from <a href="https://bpiotrowski.pl/">here</a></p>
+			</blockquote>
+
+			<h2>SEE ALSO</h2>
+			<blockquote>
+				<p><a href="mailto:zchoudhary.10@gmail.com">e-mail</a>, <a href="http://home.iiitd.edu.in/~aniket17133/documents/CV.pdf">CV</a></p>
+				<p><a href="https://github.com/iamzubin">github</a></p>
+				<p><a href="https://in.linkedin.com/in/iamzubin">LinkedIn</a></p>
+				<p>There's also a dark mode for this website, if you have not noticed yet. :D</p>
+			</blockquote>
+		</div>
+	
+	<script>
+	const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+	const currentTheme = localStorage.getItem('website_theme');
+
+	if (currentTheme) {
+		document.documentElement.setAttribute('data-theme', currentTheme);
+	
+		if (currentTheme === 'dark') {
+			toggleSwitch.checked = true;
+		}
+	}
+
+	function switchTheme(e) {
+		if (e.target.checked) {
+			document.documentElement.setAttribute('data-theme', 'dark');
+			localStorage.setItem('website_theme', 'dark');
+		}
+		else {        document.documentElement.setAttribute('data-theme', 'light');
+			localStorage.setItem('website_theme', 'light');
+		}    
+	}
+
+	toggleSwitch.addEventListener('change', switchTheme, false);
+	</script>
+
+</body></html>
